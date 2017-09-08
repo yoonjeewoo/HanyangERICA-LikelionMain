@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>멋쟁이사자처럼 at 한양대ERICA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+				<a href="./index.html" class="align-items-center"><img src="./assets/bg-header.png" class="navbar-brand" width="135px" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    Menu
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			    <ul class="navbar-nav">
+			      <li class="nav-item px-2">
+								<a class="nav-link" href="index.html" routerLinkActive="active">HOME</a>
+			      </li>
+			      <li class="nav-item px-2">
+							<a class="nav-link" routerLink="/lecture" routerLinkActive="active">MEMBER</a>
+			      </li>
+			      <li class="nav-item px-2">
+			        <a class="nav-link" routerLink="/content" routerLinkActive="active">GALLERY</a>
+			      </li>
+						<li class="nav-item px-2">
+			        <a class="nav-link" routerLink="/notice" routerLinkActive="active">PROJECT</a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		</nav>
+</header>
+
+<div class="heading d-flex align-items-center justify-content-center">
+
+<h1 class="main-heading">멋쟁이</h1>
+<h1 class="main-heading">
+  <div href="#" class="typewrite" data-period="2000" data-type='[ "&nbsp;동준처럼", "&nbsp;지우처럼", "&nbsp;경화처럼", "&nbsp;재현처럼", "&nbsp;효빈처럼", "&nbsp;경덕처럼", "&nbsp;남주처럼", "&nbsp;유림처럼", "&nbsp;정훈처럼", "&nbsp;용석처럼", "&nbsp;혜현처럼" ]'>
+  </div>
+</h1>
+
+</div>
+<section class="aboutlikelion">
+	<div class="container text-center my-5">
+		<h1>멋쟁이사자처럼</h1>
+		<hr>
+		<p>멋쟁이사자처럼은 전공불문 누구나 프로그래밍을 배워 자신이 가지고 있는 아이디어를 구현해 나가는 사람들의 모임입니다.</p>
+		<button class="btn btn-primary">멋쟁이사자처럼 공식홈페이지</button>
+	</div>
+</section>
+<section class="abouterica">
+	<div class="container text-center my-5">
+		<h1>멋쟁이사자처럼 at 한양대학교 ERICA</h1>
+		<hr>
+		<p>멋쟁이사자처럼 한양대학교 에리카캠퍼스는 2016년 공식적으로 멋쟁이사자처럼의 일원이 되었으며, 현재 멋쟁이사자처럼 5기 멤버로 구성되어 있습니다.</p>
+	</div>
+</section>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script>
+var TxtType = function(el, toRotate, period) {
+				this.toRotate = toRotate;
+				this.el = el;
+				this.loopNum = 0;
+				this.period = parseInt(period, 10) || 2000;
+				this.txt = '';
+				this.tick();
+				this.isDeleting = false;
+		};
+
+		TxtType.prototype.tick = function() {
+				var i = this.loopNum % this.toRotate.length;
+				var fullTxt = this.toRotate[i];
+
+				if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length - 1);
+				} else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+				}
+
+				this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+				var that = this;
+				var delta = 200 - Math.random() * 100;
+
+				if (this.isDeleting) { delta /= 2; }
+
+				if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+				} else if (this.isDeleting && this.txt === '') {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+				}
+
+				setTimeout(function() {
+				that.tick();
+				}, delta);
+		};
+
+		window.onload = function() {
+				var elements = document.getElementsByClassName('typewrite');
+				for (var i=0; i<elements.length; i++) {
+						var toRotate = elements[i].getAttribute('data-type');
+						var period = elements[i].getAttribute('data-period');
+						if (toRotate) {
+							new TxtType(elements[i], JSON.parse(toRotate), period);
+						}
+				}
+				// INJECT CSS
+				var css = document.createElement("style");
+				css.type = "text/css";
+				css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+				document.body.appendChild(css);
+		};
+</script>
+</html>

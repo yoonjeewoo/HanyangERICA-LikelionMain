@@ -6,19 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header class="header">
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="10">
 			<div class="container">
-				<a href="./index.html" class="align-items-center"><img src="./assets/bg-header.png" class="navbar-brand" width="135px" alt=""></a>
+				<a href="./index.html" class="align-items-center"><img src="./assets/bg-header.png" class="navbar-brand" width="150px" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    Menu
 			  </button>
-			  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			  <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 			    <ul class="navbar-nav">
 			      <li class="nav-item px-2">
 								<a class="nav-link" href="index.html">HOME</a>
@@ -30,99 +30,146 @@
 							<a class="nav-link" href="#members">MEMBER</a>
 			      </li>
 						<li class="nav-item px-2">
-							<a class="nav-link" href="#aboutlikelion">GALLERY</a>
+							<a class="nav-link" href="#gallery">GALLERY</a>
 			      </li>
 						<li class="nav-item px-2">
-							<a class="nav-link" href="#aboutlikelion">PROJECT</a>
+							<a class="nav-link" href="#projects">PROJECT</a>
 			      </li>
 			    </ul>
-			  </div>
+			  </div> -->
 			</div>
 		</nav>
 </header>
 
-<div class="heading d-flex align-items-center justify-content-center">
+<div class="heading d-flex align-items-center justify-content-center flex-wrap">
 
 <h1 class="main-heading">멋쟁이</h1>
 <h1 class="main-heading">
   <div href="#" class="typewrite" data-period="2000" data-type='[ "&nbsp;동준처럼", "&nbsp;지우처럼", "&nbsp;경화처럼", "&nbsp;재현처럼", "&nbsp;효빈처럼", "&nbsp;경덕처럼", "&nbsp;남주처럼", "&nbsp;유림처럼", "&nbsp;정훈처럼", "&nbsp;용석처럼", "&nbsp;혜현처럼" ]'>
-  </div>
-</h1>
 
+	</div>
+</h1>
 </div>
-<section id="aboutlikelion">
-	<div class="container text-center my-5">
-		<h1>멋쟁이사자처럼</h1>
-		<hr>
-		<p>멋쟁이사자처럼은 전공불문 누구나 프로그래밍을 배워 자신이 가지고 있는 아이디어를 구현해 나가는 사람들의 모임입니다.</p>
-		<button class="btn btn-primary">멋쟁이사자처럼 공식홈페이지</button>
-		<div class="container text-center my-5">
-			<h1>멋쟁이사자처럼 at 한양대학교 ERICA</h1>
-			<hr>
-			<p>멋쟁이사자처럼 한양대학교 에리카캠퍼스는 2016년 공식적으로 멋쟁이사자처럼의 일원이 되었으며, 현재 멋쟁이사자처럼 5기 멤버로 구성되어 있습니다.</p>
+
+<section id="aboutlikelion" class="d-flex align-items-center">
+	<div class="container">
+		<h1 class="text-center about-heading">WHO WE ARE AND WHAT WE DO</h1>
+		<hr class="about-heading">
+		<div class="row py-5 d-flex justify-content-center">
+			<div class="col-md-9">
+				<div class="row py-5">
+					<div class="col-md-5">
+						<img src="./assets/basiclogo_E_H.png" width="100%" alt="">
+					</div>
+					<div class="col-md-2 text-center">
+						<i class="xi-close-thin xi-2x"></i>
+					</div>
+					<div class="col-md-5">
+						<img src="./assets/hyuwordmark.png" width="100%" alt="">
+					</div>
+				</div>
+				<!-- <h1 id="likelion-heading">멋쟁이사자처럼</h1> -->
+				<p style="padding-top:15px;"><span style="font-weight:300; color: #ff9900;">멋쟁이사자처럼</span>은 <span style="font-weight:bold;">전.공.불.문.</span> 누구나 프로그래밍을 배워,
+					 자신이 가지고 있는 아이디어를 구현해 나가는 사람들의 모임입니다. 현재는 <span style="font-weight:300; color: red;">Ruby on Rails</span> 웹 프레임워크를 이용하여, 스스로 웹사이트를 구축할 수 있도록 교육을 진행하고 있습니다. 또한 <span style="font-weight:bold;">해커톤</span>과 <span style="font-weight:bold;">아이디어톤</span>을 통해 서로의 아이디어를 확인하고 구체화하는 과정을 거칩니다.</p>
+			</div>
+		</div>
+		<div class="row my-2 d-flex justify-content-center">
+			<div class="col-md-9">
+				<!-- <h1 id="erica-heading">멋쟁이사자처럼 at <span id="erica-heading" style="color: #007bff; font-family: 'Quicksand', sans-serif;">한양대학교 ERICA</span></h1> -->
+				<p>멋쟁이사자처럼 <span style="color: #007bff;">한양대학교 에리카캠퍼스</span>는 2016년 공식적으로 멋쟁이사자처럼의 일원이 되었으며, 현재 멋쟁이사자처럼 5기 멤버로 구성되어 있습니다. 구성원들은 프로그래밍 언어를 함께 공부하며, <span style="font-weight:bold;">아이디어톤</span>과 <span style="font-weight:bold;">해커톤</span>에 참가하는 등 자신의 아이디어를 실현시키기 위한 노력을 하고 있습니다.</p>
+			</div>
+
 		</div>
 	</div>
+
+
+
 </section>
 <section id="members">
-	<div class="container text-center my-5">
-		<h1>Members</h1>
+	<div class="container text-center py-5">
+		<h1 style="font-family: 'Quicksand', sans-serif;">MEET THE TEAM</h1>
 		<hr>
 		<div class="row">
-			<div class="col-md-4">1</div>
-			<div class="col-md-4">2</div>
-			<div class="col-md-4">3</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">4</div>
-			<div class="col-md-4">5</div>
-			<div class="col-md-4">6</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">7</div>
-			<div class="col-md-4">8</div>
-			<div class="col-md-4">9</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">10</div>
-			<div class="col-md-4">11</div>
-			<div class="col-md-4">12</div>
-		</div>
-	</div>
-</section>
-<section id="projects">
-	<div class="container text-center my-5">
-		<h1>What We Made</h1>
-		<hr>
-		<div class="row">
-			<div class="col-md-4">1</div>
-			<div class="col-md-4">2</div>
-			<div class="col-md-4">3</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">4</div>
-			<div class="col-md-4">5</div>
-			<div class="col-md-4">6</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">7</div>
-			<div class="col-md-4">8</div>
-			<div class="col-md-4">9</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">10</div>
-			<div class="col-md-4">11</div>
-			<div class="col-md-4">12</div>
-		</div>
-	</div>
-</section>
+			<div class="col-md-2">
+				<div class="member-box">
 
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="member-box">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="events">
+	<div class="container text-center py-5">
+		<h1 style="font-family: 'Quicksand', sans-serif;">MAIN EVENTS</h1>
+		<hr>
+
+	</div>
+</section>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <script>
-var TxtType = function(el, toRotate, period) {
+
+	var TxtType = function(el, toRotate, period) {
 				this.toRotate = toRotate;
 				this.el = el;
 				this.loopNum = 0;
@@ -178,5 +225,7 @@ var TxtType = function(el, toRotate, period) {
 				css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
 				document.body.appendChild(css);
 		};
+
 </script>
+
 </html>
